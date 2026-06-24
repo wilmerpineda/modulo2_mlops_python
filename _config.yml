@@ -1,0 +1,28 @@
+﻿title: MLOps en Python - Modulo 2
+author: Maestria en Inteligencia de Negocios
+copyright: "2026"
+logo: images/logo_santoto.png
+execute:
+  execute_notebooks: auto
+  timeout: 120
+  allow_errors: false
+parse:
+  myst_enable_extensions:
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+html:
+  home_page_in_navbar: true
+  use_repository_button: false
+  use_edit_page_button: false
+  use_issues_button: false
+  extra_footer: |
+    <div>
+      <p>Curso: MLOps en Python - Modulo 2</p>
+      <p>Maestria en Ciencia de Datos</p>
+    </div>
+sphinx:
+  extra_extensions:
+    - sphinxcontrib.mermaid

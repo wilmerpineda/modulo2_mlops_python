@@ -1,0 +1,36 @@
+﻿format: jb-book
+root: intro
+parts:
+  - caption: Resultados de Aprendizaje y Caso de Estudio
+    chapters:
+      - file: resultados_aprendizaje
+      - file: caso_estudio
+  - caption: Unidad 1. Pipelines automatizados
+    chapters:
+      - file: unidad_1/01_pipelines_modularidad
+      - file: unidad_1/02_orquestadores_airflow_prefect_kubeflow
+      - file: unidad_1/03_separacion_datos_codigo_configuracion
+  - caption: Unidad 2. Airflow para entrenamiento
+    chapters:
+      - file: unidad_2/04_airflow_fundamentos
+      - file: unidad_2/05_dags_entrenamiento
+      - file: unidad_2/06_retraining_versionado
+  - caption: Unidad 3. Empaquetado y APIs
+    chapters:
+      - file: unidad_3/07_serializacion_modelos
+      - file: unidad_3/08_fastapi_modelos
+      - file: unidad_3/09_contratos_api
+  - caption: Unidad 4. Docker y microservicios
+    chapters:
+      - file: unidad_4/10_docker_fundamentos
+      - file: unidad_4/11_microservicios_ml
+      - file: unidad_4/12_docker_api
+  - caption: Unidad 5. Despliegue en entornos reales
+    chapters:
+      - file: unidad_5/13_despliegue_nube
+      - file: unidad_5/14_aws_ecs_fargate
+      - file: unidad_5/15_entornos_productivos
+  - caption: Unidad 6. Integracion del modulo
+    chapters:
+      - file: unidad_6/16_ejemplo_end_to_end_airflow_fastapi_aws
+      - file: unidad_6/17_checklist_modulo

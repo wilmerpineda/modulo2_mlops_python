@@ -1,0 +1,14 @@
+﻿.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+/data/raw/*.csv
+/data/processed/*.csv
+/artifacts/*.joblib
+/artifacts/*.json
+/reports/*.json
+/reports/*.csv
+/airflow/logs/
+/airflow/plugins/
+/airflow/config/
+.env

@@ -1,0 +1,8 @@
+﻿.venv
+__pycache__
+.pytest_cache
+airflow/logs
+airflow/plugins
+airflow/config
+reports
+.env
