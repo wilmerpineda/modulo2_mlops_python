@@ -1,15 +1,60 @@
-﻿# Unidad 5: Gestion de dependencias y entornos productivos
+# Unidad 5: Entornos productivos
 
-Un entorno productivo debe ser mas estricto que el entorno de exploracion.
+Un entorno productivo no es solo "un servidor prendido". Es un conjunto de practicas para operar software con usuarios reales, fallos reales y cambios continuos.
 
-Practicas esperadas:
+## Ambientes
 
-* lockfile de dependencias;
-* imagen Docker versionada;
-* variables de entorno para configuracion;
-* logs estructurados;
-* health checks;
-* limites de recursos;
-* estrategia de rollback.
+| Ambiente | Proposito |
+| --- | --- |
+| Desarrollo | Cambios rapidos y pruebas locales. |
+| Staging | Validacion cercana a produccion. |
+| Produccion | Servicio consumido por usuarios o sistemas reales. |
 
-La API del ejemplo lee el modelo desde `MODEL_PATH`, lo que permite cambiar la ruta sin modificar codigo.
+El mismo contenedor deberia poder moverse entre ambientes cambiando configuracion, no codigo.
+
+## Configuracion por ambiente
+
+| Variable | Desarrollo | Produccion |
+| --- | --- | --- |
+| `MODEL_PATH` | `artifacts/model.joblib` | `/app/artifacts/model.joblib` o storage externo |
+| Logs | consola local | CloudWatch u observabilidad central |
+| Escala | un proceso | replicas segun trafico |
+| Seguridad | local | autenticacion, red privada, IAM |
+
+## Operacion minima
+
+Una API de ML en produccion necesita:
+
+* health check;
+* logs consultables;
+* version de imagen;
+* version o metadatos del modelo;
+* pruebas antes de deploy;
+* rollback;
+* monitoreo de errores;
+* monitoreo de latencia;
+* criterio para actualizar modelo.
+
+## Riesgos especificos de ML
+
+* Drift de datos.
+* Degradacion de metricas.
+* Cambios silenciosos en el contrato.
+* Sesgo por datos no representativos.
+* Modelo entrenado con datos viejos.
+* Diferencia entre features de entrenamiento y serving.
+
+## Cheatsheet
+
+| Riesgo | Mitigacion |
+| --- | --- |
+| API viva pero modelo ausente | `/health` carga el modelo |
+| Contrato roto | tests con payloads ejemplo |
+| Imagen incorrecta | tags versionados |
+| Error sin diagnostico | logs estructurados |
+| Cambio riesgoso | staging antes de produccion |
+| Modelo peor | umbral de promocion y metricas |
+
+## Mini-ejercicio
+
+Proponga una politica de despliegue para el caso `session_duration_service`: cuando se entrena un nuevo modelo, que metricas deben revisarse antes de reemplazar el modelo actual?

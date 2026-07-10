@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "segment": "active",
+      "historical_avg_session_minutes": 18.5,
+      "historical_sessions_last_7d": 5,
+      "days_since_last_session": 2,
+      "hour_of_day": 20,
+      "day_of_week": 4,
+      "device_os": "android",
+      "site": "product",
+      "entry_point": "recommendation",
+      "push_received_last_24h": 1
+    },
+    {
+      "segment": "returning",
+      "historical_avg_session_minutes": 9.2,
+      "historical_sessions_last_7d": 2,
+      "days_since_last_session": 5,
+      "hour_of_day": 8,
+      "day_of_week": 1,
+      "device_os": "ios",
+      "site": "home",
+      "entry_point": "organic",
+      "push_received_last_24h": 0
+    }
+  ]
+}

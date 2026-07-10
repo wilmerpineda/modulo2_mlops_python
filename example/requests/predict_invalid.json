@@ -1,0 +1,12 @@
+{
+  "segment": "active",
+  "historical_avg_session_minutes": 18.5,
+  "historical_sessions_last_7d": 5,
+  "days_since_last_session": 2,
+  "hour_of_day": 30,
+  "day_of_week": 4,
+  "device_os": "android",
+  "site": "product",
+  "entry_point": "recommendation",
+  "push_received_last_24h": 1
+}
