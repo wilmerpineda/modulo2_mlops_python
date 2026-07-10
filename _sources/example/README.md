@@ -41,7 +41,31 @@ Abrir:
 http://127.0.0.1:8000/docs
 ```
 
-## 4. Airflow con Docker Compose
+Ejemplos de payloads:
+
+```text
+requests/predict_valid.json
+requests/predict_invalid.json
+requests/predict_batch_valid.json
+```
+
+Prueba por consola:
+
+```bash
+curl -X POST http://127.0.0.1:8000/predict -H "Content-Type: application/json" --data @requests/predict_valid.json
+```
+
+El archivo `requests/predict_invalid.json` debe responder con status `422`, porque `hour_of_day` esta fuera del rango aceptado.
+
+## 4. Tests
+
+```bash
+python -m poetry run pytest
+```
+
+Los tests cubren contratos basicos de datos, metricas y API. Las pruebas de API usan un modelo falso para validar el contrato sin depender de un artefacto entrenado.
+
+## 5. Airflow con Docker Compose
 
 Requiere Docker instalado.
 
@@ -52,7 +76,7 @@ docker compose -f airflow/docker-compose.yml up airflow-api-server airflow-sched
 
 Abrir `http://localhost:8080` con `airflow / airflow` y ejecutar `session_duration_training_dag`.
 
-## 5. Docker local
+## 6. Docker local
 
 Primero debe existir `artifacts/model.joblib`.
 
@@ -61,7 +85,7 @@ docker build -t session-duration-api:local .
 docker run --rm -p 8000:8000 session-duration-api:local
 ```
 
-## 6. AWS ECS Fargate
+## 7. AWS ECS Fargate
 
 La guia esta en `infra/aws/README.md`.
 

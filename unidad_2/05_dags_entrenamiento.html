@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Unidad 2: DAGs para entrenamiento automatizado &#8212; MLOps en Python - Modulo 2</title>
+    <title>Unidad 2: DAGs de entrenamiento &#8212; MLOps en Python - Modulo 2</title>
   
   
   
@@ -495,7 +495,7 @@ window.addEventListener("load", load);</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'unidad_2/05_dags_entrenamiento';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Unidad 2: Evaluacion, retraining y versionado de modelos" href="06_retraining_versionado.html" />
+    <link rel="next" title="Unidad 2: Reentrenamiento y versionado" href="06_retraining_versionado.html" />
     <link rel="prev" title="Unidad 2: Fundamentos de Airflow" href="04_airflow_fundamentos.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -621,38 +621,38 @@ window.addEventListener("load", load);</script>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 1. Pipelines automatizados</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../unidad_1/01_pipelines_modularidad.html">Unidad 1: Concepto de pipeline y modularidad</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unidad_1/02_orquestadores_airflow_prefect_kubeflow.html">Unidad 1: Orquestacion con Airflow, Prefect y Kubeflow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unidad_1/03_separacion_datos_codigo_configuracion.html">Unidad 1: Separacion entre datos, codigo y configuracion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad_1/01_pipelines_modularidad.html">Unidad 1: Pipelines y modularidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad_1/02_orquestadores_airflow_prefect_kubeflow.html">Unidad 1: Orquestadores para pipelines de ML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad_1/03_separacion_datos_codigo_configuracion.html">Unidad 1: Separacion de datos, codigo, configuracion y artefactos</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 2. Airflow para entrenamiento</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="04_airflow_fundamentos.html">Unidad 2: Fundamentos de Airflow</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Unidad 2: DAGs para entrenamiento automatizado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_retraining_versionado.html">Unidad 2: Evaluacion, retraining y versionado de modelos</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Unidad 2: DAGs de entrenamiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_retraining_versionado.html">Unidad 2: Reentrenamiento y versionado</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 3. Empaquetado y APIs</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../unidad_3/07_serializacion_modelos.html">Unidad 3: Serializacion con Pickle, Joblib y MLflow Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad_3/07_serializacion_modelos.html">Unidad 3: Serializacion de modelos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unidad_3/08_fastapi_modelos.html">Unidad 3: Creacion de APIs con FastAPI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unidad_3/09_contratos_api.html">Unidad 3: Contratos de entrada y salida</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad_3/09_contratos_api.html">Unidad 3: Contratos de API para modelos</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 4. Docker y microservicios</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../unidad_4/10_docker_fundamentos.html">Unidad 4: Contenerizacion con Docker</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unidad_4/11_microservicios_ml.html">Unidad 4: Introduccion a microservicios para ML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad_4/11_microservicios_ml.html">Unidad 4: Microservicios de ML</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unidad_4/12_docker_api.html">Unidad 4: Docker para una API FastAPI</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 5. Despliegue en entornos reales</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../unidad_5/13_despliegue_nube.html">Unidad 5: Despliegue en la nube</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unidad_5/14_aws_ecs_fargate.html">Unidad 5: AWS ECS Fargate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unidad_5/15_entornos_productivos.html">Unidad 5: Gestion de dependencias y entornos productivos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad_5/15_entornos_productivos.html">Unidad 5: Entornos productivos</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 6. Integracion del modulo</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../unidad_6/16_ejemplo_end_to_end_airflow_fastapi_aws.html">Unidad 6: Ejemplo end-to-end con Airflow, FastAPI, Docker y AWS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unidad_6/17_checklist_modulo.html">Checklist del modulo 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad_6/17_checklist_modulo.html">Unidad 6: Checklist del modulo</a></li>
 </ul>
 
     </div>
@@ -778,7 +778,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -789,11 +791,25 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Unidad 2: DAGs para entrenamiento automatizado</h1>
+    <h1>Unidad 2: DAGs de entrenamiento</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dag-del-ejemplo">DAG del ejemplo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencias">Dependencias</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejecucion-de-comandos-desde-airflow">Ejecucion de comandos desde Airflow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#por-que-docker-compose">Por que Docker Compose</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos">Comandos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buenas-practicas">Buenas practicas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mini-ejercicio">Mini-ejercicio</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -803,23 +819,113 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="unidad-2-dags-para-entrenamiento-automatizado">
-<h1>Unidad 2: DAGs para entrenamiento automatizado<a class="headerlink" href="#unidad-2-dags-para-entrenamiento-automatizado" title="Link to this heading">#</a></h1>
-<p>Un DAG de entrenamiento debe ser explicito sobre las etapas que ejecuta y los artefactos que espera.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="unidad-2-dags-de-entrenamiento">
+<h1>Unidad 2: DAGs de entrenamiento<a class="headerlink" href="#unidad-2-dags-de-entrenamiento" title="Link to this heading">#</a></h1>
+<p>Un DAG de entrenamiento convierte comandos locales en un flujo observable. En este modulo, el DAG no contiene la logica del modelo; llama modulos Python que ya existen y que tambien pueden ejecutarse sin Airflow.</p>
+<section id="dag-del-ejemplo">
+<h2>DAG del ejemplo<a class="headerlink" href="#dag-del-ejemplo" title="Link to this heading">#</a></h2>
+<p>Archivo:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>example/airflow/dags/session_duration_training_dag.py
+</pre></div>
+</div>
+<p>Tareas:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Task ID</p></th>
+<th class="head"><p>Modulo ejecutado</p></th>
+<th class="head"><p>Salida principal</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">generate_data</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">session_duration_service.data</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">data/train.csv</span></code>, <code class="docutils literal notranslate"><span class="pre">data/test.csv</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">train_model</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">session_duration_service.train</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">artifacts/candidate_model.joblib</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">evaluate_model</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">session_duration_service.evaluate</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">reports/metrics.json</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">promote_model</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">session_duration_service.promote_model</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">artifacts/model.joblib</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="dependencias">
+<h2>Dependencias<a class="headerlink" href="#dependencias" title="Link to this heading">#</a></h2>
 <pre  class="mermaid">
         flowchart LR
     A[generate_data] --&gt; B[train_model]
     B --&gt; C[evaluate_model]
     C --&gt; D[promote_model]
-    </pre><p>La tarea de promocion no deberia copiar un modelo a produccion solo porque el entrenamiento termino. Debe revisar criterios como <code class="docutils literal notranslate"><span class="pre">rmse</span></code>, <code class="docutils literal notranslate"><span class="pre">mae</span></code> o <code class="docutils literal notranslate"><span class="pre">r2</span></code>.</p>
-<p>Buenas practicas:</p>
+    </pre><p>La promocion ocurre al final porque depende de metricas. En un proyecto real, <code class="docutils literal notranslate"><span class="pre">promote_model</span></code> deberia comparar metricas contra umbrales o contra el modelo actualmente productivo.</p>
+</section>
+<section id="ejecucion-de-comandos-desde-airflow">
+<h2>Ejecucion de comandos desde Airflow<a class="headerlink" href="#ejecucion-de-comandos-desde-airflow" title="Link to this heading">#</a></h2>
+<p>El DAG usa <code class="docutils literal notranslate"><span class="pre">BashOperator</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pipeline_task</span><span class="p">(</span><span class="n">module</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">BashOperator</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">BashOperator</span><span class="p">(</span>
+        <span class="n">task_id</span><span class="o">=</span><span class="n">task_id</span><span class="p">,</span>
+        <span class="n">bash_command</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;cd </span><span class="si">{</span><span class="n">PROJECT_DIR</span><span class="si">}</span><span class="s2"> &amp;&amp; PYTHONPATH=</span><span class="si">{</span><span class="n">PYTHONPATH</span><span class="si">}</span><span class="s2"> python -m </span><span class="si">{</span><span class="n">module</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p>Puntos importantes:</p>
 <ul class="simple">
-<li><p>usar scripts idempotentes;</p></li>
-<li><p>escribir outputs en rutas conocidas;</p></li>
-<li><p>fallar rapido si falta un artefacto;</p></li>
-<li><p>registrar metricas en archivos legibles;</p></li>
-<li><p>separar entrenamiento de servicio de inferencia.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">{PROJECT_DIR}</span></code> asegura que las rutas relativas funcionen.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> permite importar el paquete desde <code class="docutils literal notranslate"><span class="pre">src</span></code>.</p></li>
+<li><p>Cada tarea ejecuta un modulo con <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span></code>.</p></li>
 </ul>
+</section>
+<section id="por-que-docker-compose">
+<h2>Por que Docker Compose<a class="headerlink" href="#por-que-docker-compose" title="Link to this heading">#</a></h2>
+<p>Airflow tiene varias dependencias y servicios. En vez de instalar Airflow dentro del ambiente Poetry del proyecto, el ejemplo usa Docker Compose con:</p>
+<ul class="simple">
+<li><p>Postgres para metadatos;</p></li>
+<li><p>Airflow API server;</p></li>
+<li><p>scheduler;</p></li>
+<li><p>dag processor;</p></li>
+<li><p>volumen montado hacia el proyecto.</p></li>
+</ul>
+<p>Esto separa el entorno de orquestacion del entorno de desarrollo del paquete.</p>
+</section>
+<section id="comandos">
+<h2>Comandos<a class="headerlink" href="#comandos" title="Link to this heading">#</a></h2>
+<p>Desde <code class="docutils literal notranslate"><span class="pre">example</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>airflow/docker-compose.yml<span class="w"> </span>up<span class="w"> </span>airflow-init
+docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>airflow/docker-compose.yml<span class="w"> </span>up<span class="w"> </span>airflow-api-server<span class="w"> </span>airflow-scheduler<span class="w"> </span>airflow-dag-processor
+</pre></div>
+</div>
+<p>Abrir:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>http://localhost:8080
+</pre></div>
+</div>
+<p>Credenciales:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>airflow / airflow
+</pre></div>
+</div>
+</section>
+<section id="buenas-practicas">
+<h2>Buenas practicas<a class="headerlink" href="#buenas-practicas" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Mantener tareas pequenas y con nombres descriptivos.</p></li>
+<li><p>Evitar notebooks como tareas directas si no son reproducibles.</p></li>
+<li><p>Escribir logs claros en cada modulo.</p></li>
+<li><p>Usar rutas configurables.</p></li>
+<li><p>Separar entrenamiento de inferencia.</p></li>
+<li><p>Agregar validacion antes de promocion.</p></li>
+</ul>
+</section>
+<section id="mini-ejercicio">
+<h2>Mini-ejercicio<a class="headerlink" href="#mini-ejercicio" title="Link to this heading">#</a></h2>
+<p>Agregue conceptualmente una tarea <code class="docutils literal notranslate"><span class="pre">validate_data</span></code> entre <code class="docutils literal notranslate"><span class="pre">generate_data</span></code> y <code class="docutils literal notranslate"><span class="pre">train_model</span></code>. Explique que validaria y que deberia pasar si falla.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -866,7 +972,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Unidad 2: Evaluacion, retraining y versionado de modelos</p>
+        <p class="prev-next-title">Unidad 2: Reentrenamiento y versionado</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -876,6 +982,27 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dag-del-ejemplo">DAG del ejemplo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencias">Dependencias</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejecucion-de-comandos-desde-airflow">Ejecucion de comandos desde Airflow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#por-que-docker-compose">Por que Docker Compose</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos">Comandos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buenas-practicas">Buenas practicas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mini-ejercicio">Mini-ejercicio</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
